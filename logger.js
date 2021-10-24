@@ -15,7 +15,7 @@ module.exports = (c) => {
         send_log(c,
           channel.guild,
           "RED",
-          "Channel DELETED",
+          "Canale eliminato",
           `Nome del canale: \`${channel.name}\`\nId del canale: \`${channel.id}\`\nTipo di canale: \`${channel.type}\``
         )
       })
@@ -24,7 +24,7 @@ module.exports = (c) => {
           channel.guild,
           "YELLOW",
           "Channel PINS UPDATE",
-          `Nome del canale: \`${channel.name}\`\nId del canale: \`${channel.id}\`\nPinned at \`${time}\``
+          `Nome del canale: \`${channel.name}\`\nId del canale: \`${channel.id}\`\nAttaccato alle \`${time}\``
           , "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/samsung/265/pushpin_1f4cc.png"
         )
       })
@@ -34,12 +34,12 @@ module.exports = (c) => {
         if(!guildChannel || !guildChannel.available) return;
 
         let types = {
-          text: "Text Channel",
-          voice: "Voice Channel",
-          null: "No Type",
+          testuale: "Text Channel",
+          vocale : "Voice Channel",
+          niente: "No Type",
           news: "News Channel",
           store: "Store Channel",
-          category: "Category",
+          categoria: "Category",
         }
 
         if(oldChannel.name != newChannel.name){
