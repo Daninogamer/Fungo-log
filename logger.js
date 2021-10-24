@@ -34,12 +34,12 @@ module.exports = (c) => {
         if(!guildChannel || !guildChannel.available) return;
 
         let types = {
-          testuale: "Text Channel",
-          vocale : "Voice Channel",
+          testuale: "Testuale Channel",
+          vocale : "Vocale Channel",
           niente: "No Type",
           news: "News Channel",
           store: "Store Channel",
-          categoria: "Category",
+          categoria: "Categoria",
         }
 
         if(oldChannel.name != newChannel.name){
