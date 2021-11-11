@@ -13,10 +13,10 @@ const client = new Discord.Client({
 
 const config = require('./config.json')
 
-client.login(process.env.token);
+client.login('OTAxMjA5MzAxNzQwMzE0NjM0.YXMikQ.UeILwvOGWnjg46Fwl69APp5f_Ug');
 
 client.on("ready", ()=>{
-  console.log(`${client.user.tag} è online! Il prefisso è: ${client.config.prefix}`.bgGreen);
+  console.log(`${client.user.tag} è online! Il prefisso è: %`.bgGreen);
   //client.user.setActivity("Hello world", {type: "STREAMING", url: "https://twitch.tv/#"})
 })
 
