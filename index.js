@@ -10,9 +10,8 @@ const client = new Discord.Client({
     }
   }
 });
-client.config = require("./config.json");
 
-client.login(client.config.token);
+client.login(process.env.token);
 
 client.on("ready", ()=>{
   console.log(`${client.user.tag} è online! Il prefisso è: ${client.config.prefix}`.bgGreen);
