@@ -11,6 +11,8 @@ const client = new Discord.Client({
   }
 });
 
+const config = require('./config.json')
+
 client.login(process.env.token);
 
 client.on("ready", ()=>{
